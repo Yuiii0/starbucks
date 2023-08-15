@@ -5,6 +5,7 @@
   --light-gray-color: #e5e5e5;
   --white-color: #fff;
   --green-color: #669900;
+  --dark-green:color: #006633
   --header-color: #f6f5f0;
   --brown-color: #592b18;
   --gold-color: #d9aa8a;
@@ -20,7 +21,7 @@ body {
 }
 
 img {
-  display: block; //inline baseline 삭제
+  display: block; 
 }
 a {
   text-decoration: none;
@@ -114,12 +115,13 @@ a {
 
 /* Header */
 header {
-  position: fixed;
-  top: 0;
+  position:fixed;
+  top:0;
   width: 100%;
-  background-color: var(--header-color);
+  background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
-  z-index: 9;
+  z-index: 10;
+  
 }
 
 header > .inner {

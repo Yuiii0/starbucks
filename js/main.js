@@ -1,20 +1,3 @@
-const searchIcon = document.querySelector(".search");
-const searchInput = document.querySelector(".search input");
-
-searchIcon.addEventListener("click", () => {
-  searchInput.focus();
-});
-searchInput.addEventListener("focus", () => {
-  searchIcon.classList.add("focused");
-  searchInput.setAttribute("placeholder", "통합검색");
-});
-
-searchInput.addEventListener("blur", () => {
-  searchIcon.classList.remove("focused");
-  searchInput.setAttribute("placeholder", "");
-  searchInput.value = "";
-});
-
 // Badge
 const badges = document.querySelector(".badges");
 const toTopEl = document.querySelector("#to-top");
@@ -157,7 +140,3 @@ spyEls.forEach(function (spyEl) {
     .setClassToggle(spyEl, "show") // 요소가 화면에 보이면 show 클래스 추가
     .addTo(new ScrollMagic.Controller()); // 컨트롤러에 장면을 할당(필수!)
 });
-
-// Copyright
-const thisYear = document.querySelector(".this-year");
-thisYear.textContent = new Date().getFullYear();
